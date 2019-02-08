@@ -21,7 +21,7 @@ namespace ConsoleRSS
     class Program
     {
 
-        static int UpdateDB(string url)
+        static int UpdateDB(string url)//Запись в БД
         {
             Context db = new Context();
            
@@ -76,7 +76,8 @@ namespace ConsoleRSS
             Context db = new Context();
 
 
-            foreach (var item in db.RSSSources)
+            foreach (var item in db.RSSSources)//Вывод на экран
+
             {
                 int count =  UpdateDB(item.RSSSourceURL.ToString());
                 Console.WriteLine("Источник: "+item.SourceName+"\nВсего новостей в истчнике: "+count);
