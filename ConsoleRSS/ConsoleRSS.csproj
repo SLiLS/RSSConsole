@@ -51,6 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EF\Context.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Interfaces\IRSSNews.cs" />
+    <Compile Include="Interfaces\IRSSSource.cs" />
     <Compile Include="Migrations\201902070847561_InitialCreate.cs" />
     <Compile Include="Migrations\201902070847561_InitialCreate.Designer.cs">
       <DependentUpon>201902070847561_InitialCreate.cs</DependentUpon>
@@ -60,6 +63,8 @@
     <Compile Include="Models\RSSSource.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\RSSNewsRepository.cs" />
+    <Compile Include="Repositories\RSSSourcesRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
